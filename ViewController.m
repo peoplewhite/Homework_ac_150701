@@ -32,11 +32,20 @@
 }
 - (IBAction)btn1:(id)sender {
     NSDate *date = [NSDate date];
-    
     [self showResult:date];
-    
 }
 - (IBAction)btn2:(id)sender {
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    dateFormatter.dateFormat = @"yyyy/MM/dd";
+    NSLog(@"In Taiwan:  %@", [dateFormatter stringFromDate:date]);
+    
+    
+    dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+    NSLog(@"In GMT style:   %@", [dateFormatter stringFromDate:date]);
+    
+    
 }
 - (IBAction)btn3:(id)sender {
 }

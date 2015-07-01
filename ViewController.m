@@ -38,20 +38,20 @@
     [self showResult:date];
 }
 - (IBAction)btn2:(id)sender {
-    
     NSDate *date = _datePicker.date;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     dateFormatter.dateFormat = @"yyyy/MM/dd  HH:mm";
     NSLog(@"In Taiwan:  %@", [dateFormatter stringFromDate:date]);
     [self showResultString:[dateFormatter stringFromDate:date]];
     
-    
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
     NSLog(@"In GMT style:   %@", [dateFormatter stringFromDate:date]);
-    
-    
 }
 - (IBAction)btn3:(id)sender {
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date = _datePicker.date;
+    NSDate *theDayAfterDateIPicked = [cal dateByAddingUnit:NSCalendarUnitDay value:1 toDate:date options:0];
+    [self showResult:theDayAfterDateIPicked];
 }
 - (IBAction)btn4:(id)sender {
 }

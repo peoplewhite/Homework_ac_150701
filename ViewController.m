@@ -151,8 +151,20 @@
     
 }
 - (IBAction)btn11:(id)sender {
+    //***
+    NSDate *date = _datePicker.date;
+    NSTimeInterval interval = date.timeIntervalSince1970;
+    NSLog(@"%f", interval);
+    NSDate *date2 = [NSDate dateWithTimeIntervalSince1970:interval];
+    [self showResult:date2];
 }
 - (IBAction)btn12:(id)sender {
+    NSString *strMyBirthDate = @"1987-09-23";
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate *date = [dateFormatter dateFromString:strMyBirthDate];
+    [self showResult:date];
 }
 
 @end

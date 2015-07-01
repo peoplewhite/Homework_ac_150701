@@ -10,5 +10,6 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *labShowResult;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 
 @end

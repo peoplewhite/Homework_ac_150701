@@ -30,16 +30,20 @@
     _labShowResult.text = str;
     
 }
+- (void)showResultString:(NSString *)str {
+    _labShowResult.text = str;
+}
 - (IBAction)btn1:(id)sender {
-    NSDate *date = [NSDate date];
+    NSDate *date = _datePicker.date;
     [self showResult:date];
 }
 - (IBAction)btn2:(id)sender {
     
-    NSDate *date = [NSDate date];
+    NSDate *date = _datePicker.date;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    dateFormatter.dateFormat = @"yyyy/MM/dd";
+    dateFormatter.dateFormat = @"yyyy/MM/dd  HH:mm";
     NSLog(@"In Taiwan:  %@", [dateFormatter stringFromDate:date]);
+    [self showResultString:[dateFormatter stringFromDate:date]];
     
     
     dateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];

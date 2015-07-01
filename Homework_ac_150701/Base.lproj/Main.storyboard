@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6fT-G4-OjN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="N23-Hb-Gvg">
+            <objects>
+                <viewController id="6fT-G4-OjN" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PdT-Ya-PQz"/>
+                        <viewControllerLayoutGuide type="bottom" id="RLu-M9-skQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nia-HC-MAX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QU1-p9-u7b">
+                                <rect key="frame" x="36" y="54" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="quK-8i-hmg"/>
+                                </constraints>
+                                <state key="normal" title="現在">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rx-82-ioM">
+                                <rect key="frame" x="36" y="94" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="uhB-cd-YtF"/>
+                                </constraints>
+                                <state key="normal" title="show time">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNP-XY-2Jf">
+                                <rect key="frame" x="36" y="132" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="v1K-5w-BMJ"/>
+                                </constraints>
+                                <state key="normal" title="時間快轉">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jM-Cn-7Jj">
+                                <rect key="frame" x="36" y="172" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="Bk3-Di-FoP"/>
+                                </constraints>
+                                <state key="normal" title="3小時20分鐘後">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-tq-bOA">
+                                <rect key="frame" x="36" y="210" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Djg-jB-qwQ"/>
+                                </constraints>
+                                <state key="normal" title="下次9:30">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfm-Rr-sBA">
+                                <rect key="frame" x="36" y="290" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="WcW-sr-hM5"/>
+                                </constraints>
+                                <state key="normal" title="上次星期天">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beu-q8-gR9">
+                                <rect key="frame" x="36" y="334" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="TOn-mR-UA1"/>
+                                </constraints>
+                                <state key="normal" title="指定時間">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0I-Gs-j1g">
+                                <rect key="frame" x="36" y="374" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="81d-SV-zhI"/>
+                                </constraints>
+                                <state key="normal" title="取得時間明細">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y8-Jc-gew">
+                                <rect key="frame" x="36" y="414" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="mkT-DC-mV9"/>
+                                </constraints>
+                                <state key="normal" title="今天，明天，昨天">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwS-P3-9Oh">
+                                <rect key="frame" x="36" y="454" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="xW8-uw-lft"/>
+                                </constraints>
+                                <state key="normal" title="timestamp">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39K-vd-423">
+                                <rect key="frame" x="36" y="494" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ntG-iN-jXs"/>
+                                </constraints>
+                                <state key="normal" title="字串轉時間">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-ZV-P9f">
+                                <rect key="frame" x="36" y="250" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="XSH-32-bcX"/>
+                                </constraints>
+                                <state key="normal" title="下次星期天">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QU1-p9-u7b" firstAttribute="top" secondItem="PdT-Ya-PQz" secondAttribute="bottom" constant="34" id="5DL-AN-ivU"/>
+                            <constraint firstItem="4W6-ZV-P9f" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="6il-wN-Fp1"/>
+                            <constraint firstItem="wfm-Rr-sBA" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="8Xq-yC-TSC"/>
+                            <constraint firstItem="2y8-Jc-gew" firstAttribute="top" secondItem="s0I-Gs-j1g" secondAttribute="bottom" constant="10" id="DL1-Fq-DBQ"/>
+                            <constraint firstItem="xwS-P3-9Oh" firstAttribute="top" secondItem="2y8-Jc-gew" secondAttribute="bottom" constant="10" id="ILM-2a-eQm"/>
+                            <constraint firstItem="3jM-Cn-7Jj" firstAttribute="top" secondItem="xNP-XY-2Jf" secondAttribute="bottom" constant="10" id="IZL-oD-8gj"/>
+                            <constraint firstItem="QU1-p9-u7b" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="JiC-rq-bDU"/>
+                            <constraint firstItem="xwS-P3-9Oh" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="KCw-qo-SPN"/>
+                            <constraint firstItem="wVu-tq-bOA" firstAttribute="top" secondItem="3jM-Cn-7Jj" secondAttribute="bottom" constant="8" id="NhB-lc-bAQ"/>
+                            <constraint firstItem="4W6-ZV-P9f" firstAttribute="top" secondItem="wVu-tq-bOA" secondAttribute="bottom" constant="10" id="NpQ-1m-6qj"/>
+                            <constraint firstItem="wVu-tq-bOA" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="OuH-qn-xlX"/>
+                            <constraint firstItem="8rx-82-ioM" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="PbE-Mg-LQz"/>
+                            <constraint firstItem="wfm-Rr-sBA" firstAttribute="top" secondItem="4W6-ZV-P9f" secondAttribute="bottom" constant="10" id="Pbc-qg-UlL"/>
+                            <constraint firstItem="39K-vd-423" firstAttribute="top" secondItem="xwS-P3-9Oh" secondAttribute="bottom" constant="10" id="Tf9-3Z-3CT"/>
+                            <constraint firstItem="2y8-Jc-gew" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="aIO-sG-Tcq"/>
+                            <constraint firstItem="s0I-Gs-j1g" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="ahs-cT-CR4"/>
+                            <constraint firstItem="Beu-q8-gR9" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="egR-FR-vPW"/>
+                            <constraint firstItem="3jM-Cn-7Jj" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="jpe-7k-dEv"/>
+                            <constraint firstItem="s0I-Gs-j1g" firstAttribute="top" secondItem="Beu-q8-gR9" secondAttribute="bottom" constant="10" id="kgC-2Q-Hcf"/>
+                            <constraint firstItem="Beu-q8-gR9" firstAttribute="top" secondItem="wfm-Rr-sBA" secondAttribute="bottom" constant="14" id="lfw-Is-mTk"/>
+                            <constraint firstItem="xNP-XY-2Jf" firstAttribute="top" secondItem="8rx-82-ioM" secondAttribute="bottom" constant="8" id="pzw-gC-3Ya"/>
+                            <constraint firstItem="xNP-XY-2Jf" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="tlc-3e-nQg"/>
+                            <constraint firstItem="8rx-82-ioM" firstAttribute="top" secondItem="QU1-p9-u7b" secondAttribute="bottom" constant="10" id="xTs-qn-AyC"/>
+                            <constraint firstItem="39K-vd-423" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="y9Z-2f-tKZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrX-Mh-Pap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="379"/>
+        </scene>
+    </scenes>
+</document>

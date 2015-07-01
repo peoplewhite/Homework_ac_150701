@@ -20,6 +20,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    _btnAssignDate.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
 //    _btnAssignDate.titleLabel.minimumScaleFactor = 0.5;
 //    _btnAssignDate.titleLabel.adjustsFontSizeToFitWidth = YES;
     
@@ -89,8 +90,65 @@
     [self showResult:date];
 }
 - (IBAction)btn9:(id)sender {
+    
+    [self showResultString:@"Please See Log"];
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date = _datePicker.date;
+    //1
+    NSInteger numEra, numYear, numMonth, numDay;
+    [cal getEra:&numEra year:&numYear month:&numMonth day:&numDay fromDate:date];
+    
+    NSLog(@"era = %ld", numEra);
+    NSLog(@"year = %ld", numYear);
+    NSLog(@"month = %ld", numMonth);
+    NSLog(@"day = %ld", numDay);
+    
+    //2
+    NSInteger numHour, numMin, numSec, numNanoSec;
+    [cal getHour:&numHour minute:&numMin second:&numSec nanosecond:&numNanoSec fromDate:date];
+    
+    NSLog(@"Hour = %ld", numHour);
+    NSLog(@"Min = %ld", numMin);
+    NSLog(@"Sec = %ld", numSec);
+    NSLog(@"NanoSec = %ld", numNanoSec);
+    
+    //3
+    NSInteger numYearForWeekOfYear, numWeekOfYear, numWeekDay;
+    [cal getEra:&numEra yearForWeekOfYear:&numYearForWeekOfYear weekOfYear:&numYearForWeekOfYear weekday:&numWeekDay fromDate:date];
+    
+    NSLog(@"NanoSec = %ld", numYearForWeekOfYear);
+    NSLog(@"Weekofyear = %ld", numWeekOfYear);
+    NSLog(@"WeekDay = %ld", numWeekDay);
 }
 - (IBAction)btn10:(id)sender {
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date = _datePicker.date;
+   
+    NSString *strResult = @"";
+    
+    if ([cal isDateInToday:date]) {
+        strResult = [strResult stringByAppendingString:@"[是今天]"];
+    }
+    else {
+        strResult = [strResult stringByAppendingString:@"[不是今天]"];
+    }
+   
+    if ([cal isDateInTomorrow:date]) {
+        strResult = [strResult stringByAppendingString:@"[是明天]"];
+    }
+    else {
+        strResult =  [strResult stringByAppendingString:@"[不是明天]"];
+    }
+    
+    if ([cal isDateInYesterday:date]) {
+        strResult =  [strResult stringByAppendingString:@"[是昨天]"];
+    }
+    else {
+        strResult = [strResult stringByAppendingString:@"[不是昨天]"];
+    }
+    
+    [self showResultString:strResult];
+    
 }
 - (IBAction)btn11:(id)sender {
 }

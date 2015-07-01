@@ -21,7 +21,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+- (void)showResult:(NSDate *)dateData {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    dateFormatter.dateStyle = NSDateFormatterLongStyle;
+    dateFormatter.timeStyle = NSDateFormatterLongStyle;
+    
+    NSString *str = [dateFormatter stringFromDate:dateData];
+    _labShowResult.text = str;
+    
+}
 - (IBAction)btn1:(id)sender {
+    NSDate *date = [NSDate date];
+    
+    [self showResult:date];
+    
 }
 - (IBAction)btn2:(id)sender {
 }

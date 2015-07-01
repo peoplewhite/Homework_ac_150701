@@ -54,6 +54,11 @@
     [self showResult:theDayAfterDateIPicked];
 }
 - (IBAction)btn4:(id)sender {
+    //3:20
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *futureTime = [cal dateByAddingUnit:NSCalendarUnitMinute value:200 toDate:_datePicker.date options:0];
+    [self showResult:futureTime];
+    
 }
 - (IBAction)btn5:(id)sender {
 }

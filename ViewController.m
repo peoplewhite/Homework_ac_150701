@@ -71,6 +71,9 @@
     [self showResult:date];
 }
 - (IBAction)btn7:(id)sender {
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date = [cal nextDateAfterDate:_datePicker.date matchingUnit:NSCalendarUnitWeekday value:1 options:NSCalendarSearchBackwards | NSCalendarMatchNextTime];
+    [self showResult:date];
 }
 - (IBAction)btn8:(id)sender {
 }

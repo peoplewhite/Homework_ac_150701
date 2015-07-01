@@ -77,6 +77,18 @@
                                     <action selector="btn5:" destination="6fT-G4-OjN" eventType="touchUpInside" id="wUw-LQ-H3h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-ZV-P9f">
+                                <rect key="frame" x="36" y="250" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="XSH-32-bcX"/>
+                                </constraints>
+                                <state key="normal" title="下次星期天">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn6:" destination="6fT-G4-OjN" eventType="touchUpInside" id="zqI-Wb-cZE"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfm-Rr-sBA">
                                 <rect key="frame" x="36" y="290" width="75" height="30"/>
                                 <constraints>
@@ -149,24 +161,36 @@
                                     <action selector="btn12:" destination="6fT-G4-OjN" eventType="touchUpInside" id="mvl-uo-kj0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-ZV-P9f">
-                                <rect key="frame" x="36" y="250" width="75" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-hd-FvZ">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CjD-Fa-hoj">
+                                        <rect key="frame" x="0.0" y="19" width="600" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="xzQ-pt-Nb4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.83921568629999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="XSH-32-bcX"/>
+                                    <constraint firstAttribute="trailing" secondItem="CjD-Fa-hoj" secondAttribute="trailing" id="6ei-Lb-IHz"/>
+                                    <constraint firstAttribute="height" constant="60" id="Vj1-3B-Ru7"/>
+                                    <constraint firstItem="CjD-Fa-hoj" firstAttribute="leading" secondItem="g6u-hd-FvZ" secondAttribute="leading" id="hmn-M4-TAs"/>
+                                    <constraint firstAttribute="centerY" secondItem="CjD-Fa-hoj" secondAttribute="centerY" id="m5V-bk-cpU"/>
                                 </constraints>
-                                <state key="normal" title="下次星期天">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btn6:" destination="6fT-G4-OjN" eventType="touchUpInside" id="zqI-Wb-cZE"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QU1-p9-u7b" firstAttribute="top" secondItem="PdT-Ya-PQz" secondAttribute="bottom" constant="34" id="5DL-AN-ivU"/>
                             <constraint firstItem="4W6-ZV-P9f" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="6il-wN-Fp1"/>
                             <constraint firstItem="wfm-Rr-sBA" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="8Xq-yC-TSC"/>
+                            <constraint firstAttribute="trailing" secondItem="g6u-hd-FvZ" secondAttribute="trailing" id="8nL-kf-N6t"/>
+                            <constraint firstItem="RLu-M9-skQ" firstAttribute="top" secondItem="g6u-hd-FvZ" secondAttribute="bottom" id="930-LF-7Oe"/>
+                            <constraint firstItem="g6u-hd-FvZ" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leading" id="D5k-LK-OQU"/>
                             <constraint firstItem="2y8-Jc-gew" firstAttribute="top" secondItem="s0I-Gs-j1g" secondAttribute="bottom" constant="10" id="DL1-Fq-DBQ"/>
                             <constraint firstItem="xwS-P3-9Oh" firstAttribute="top" secondItem="2y8-Jc-gew" secondAttribute="bottom" constant="10" id="ILM-2a-eQm"/>
                             <constraint firstItem="3jM-Cn-7Jj" firstAttribute="top" secondItem="xNP-XY-2Jf" secondAttribute="bottom" constant="10" id="IZL-oD-8gj"/>
@@ -190,6 +214,9 @@
                             <constraint firstItem="39K-vd-423" firstAttribute="leading" secondItem="Nia-HC-MAX" secondAttribute="leadingMargin" constant="20" id="y9Z-2f-tKZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labShowResult" destination="CjD-Fa-hoj" id="mIw-Sw-NT1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrX-Mh-Pap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

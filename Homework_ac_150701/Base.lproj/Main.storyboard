@@ -255,6 +255,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="KLr-KO-rc4" id="sgb-x6-UTu"/>
                         <outlet property="labShowResult" destination="CjD-Fa-hoj" id="mIw-Sw-NT1"/>
                     </connections>
                 </viewController>

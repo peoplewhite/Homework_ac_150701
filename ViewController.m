@@ -61,6 +61,9 @@
     
 }
 - (IBAction)btn5:(id)sender {
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date = [cal nextDateAfterDate:_datePicker.date matchingHour:9 minute:30 second:0 options:NSCalendarMatchNextTime];
+    [self showResult:date];
 }
 - (IBAction)btn6:(id)sender {
 }

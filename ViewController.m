@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+//    _btnAssignDate.titleLabel.minimumScaleFactor = 0.5;
+//    _btnAssignDate.titleLabel.adjustsFontSizeToFitWidth = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,6 +83,10 @@
     [self showResult:date];
 }
 - (IBAction)btn8:(id)sender {
+    
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSDate *date = [cal dateWithEra:0 year:1987 month:9 day:23 hour:0 minute:0 second:0 nanosecond:0];
+    [self showResult:date];
 }
 - (IBAction)btn9:(id)sender {
 }
